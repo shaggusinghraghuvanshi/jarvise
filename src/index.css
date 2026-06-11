@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "Share Tech Mono", monospace;
+  --font-sans: "Rajdhani", sans-serif;
+  
+  --color-hud-bg: #050505;
+  --color-hud-bg2: #0a0a0a;
+  --color-hud-bg3: #0d0d0d;
+  --color-hud-blue: #00f2ff;
+  --color-hud-green: #39ff14;
+  --color-hud-amber: #ffaa00;
+  --color-hud-red: #ff3131;
+  --color-hud-text: #00f2ff;
+  --color-hud-text-dim: rgba(0, 242, 255, 0.5);
+  --color-hud-text-faint: rgba(0, 242, 255, 0.2);
+  --color-hud-border: #1a1a1a;
+  --color-hud-border2: rgba(0, 242, 255, 0.12);
+  --color-hud-blue-dim: rgba(0, 242, 255, 0.15);
+  --color-hud-blue-glow: rgba(0, 242, 255, 0.06);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-hud-bg);
+    color: var(--color-hud-text);
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom CSS to replicate the nostalgic authentic sci-fi scanlines */
+.scanline {
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.1) 2px, rgba(0, 0, 0, 0.1) 4px);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-hud-border);
+  border-radius: 2px;
+}

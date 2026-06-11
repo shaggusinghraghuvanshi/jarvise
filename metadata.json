@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS OS",
+  "description": "An advanced AI operating system terminal interface styled as a futuristic sci-fi HUD with integrated voice capabilities and server-side model processing.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
